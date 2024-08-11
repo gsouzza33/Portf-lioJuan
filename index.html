@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio - Designer Gráfico</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Juan</h1>
+            <p>Designer Gráfico</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#portfolio">Portfólio</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>Sobre mim</h2>
+        <p>Com uma paixão profunda pelo design gráfico, dedico minha criatividade e atenção aos detalhes para transformar conceitos abstratos em visuais impactantes. Acredito que o design vai além da estética; é uma poderosa ferramenta de comunicação capaz de contar histórias, evocar emoções e criar conexões duradouras. Cada projeto é uma oportunidade de deixar uma marca única e memorável, onde arte e estratégia se encontram para alcançar resultados que superam expectativas.</p>
+    </section>
+
+    <section id="portfolio">
+        <h2>Portfólio</h2>
+        <div class="gallery">
+            <img src="desenho 35 ellie_page-0001.jpg" alt="Projeto 1">
+            <img src="juan desenho 14 marcesuke_page-0001.jpg" alt="Projeto 2">
+            <img src="juan desenho 8 kill_page-0001.jpg" alt="Projeto 3">
+            <img src="desenho 46 hunter nen_page-0001.jpg" alt="Projeto 4">
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contato</h2>
+    
+        <!-- Botões de Contato -->
+        <div class="contact-buttons">
+            <a href="https://wa.me/5597984298455" class="contact-button whatsapp-button" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp"> WhatsApp
+            </a>
+            <a href="https://www.instagram.com/invites/contact/?igsh=grcfj7rfi4rg&utm_content=vjx1l8p" class="contact-button instagram-button" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram"> Instagram
+            </a>
+        </div>
+    </section>
+
+    <footer>
+    <p>&copy; 2024 gsouza. Criado por gsouza. Todos os direitos reservados.</p>
+</footer>
+
+
+    <script>
+        let prevScrollpos = window.pageYOffset;
+        const header = document.querySelector("header");
+
+        window.onscroll = function() {
+            let currentScrollPos = window.pageYOffset;
+
+            if (prevScrollpos > currentScrollPos) {
+                header.style.top = "0";
+            } else {
+                header.style.top = "-100px";
+            }
+
+            prevScrollpos = currentScrollPos;
+        }
+    </script>
+</body>
+</html>

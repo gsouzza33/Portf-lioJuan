@@ -1,0 +1,158 @@
+/* styles.css */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+header {
+    background-color: #333;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 10px;
+    position: fixed; /* Mudança de sticky para fixed */
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    transition: top 0.3s ease-in-out; /* Transição suave para esconder */
+}
+
+.header-content h1 {
+    font-size: 48px;
+    margin: 0;
+}
+
+.header-content p {
+    font-size: 20px;
+    margin: 5px 0 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#about {
+    padding: 80px 20px 60px; /* Espaçamento superior para evitar sobreposição */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 60px); /* Ajusta a altura para considerar a altura do cabeçalho fixo */
+    box-sizing: border-box;
+}
+
+#about h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#about p {
+    max-width: 800px;
+    font-size: 20px;
+    line-height: 1.8;
+    color: #666;
+    margin: 0 auto;
+}
+
+#portfolio .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    margin: 15px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px; /* Cantos arredondados */
+}
+
+.gallery img:first-child,
+.gallery img:last-child {
+    width: 300px; /* Largura do quadrado */
+    height: 300px; /* Altura do quadrado */
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+.contact-buttons {
+    display: flex;
+    flex-direction: column;
+    height: 300px; /* Altura dos botões pode ser ajustada conforme necessário */
+    margin-top: 20px;
+}
+
+.contact-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1; /* Faz com que os botões ocupem a área disponível igualmente */
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.contact-button img {
+    width: 24px; /* Tamanho do ícone */
+    height: 24px;
+    margin-right: 10px;
+}
+
+.whatsapp-button {
+    background-color: #25D366; /* Cor oficial do WhatsApp */
+}
+
+.whatsapp-button:hover {
+    background-color: #20b455;
+}
+
+.instagram-button {
+    background-color: #E1306C; /* Cor oficial do Instagram */
+}
+
+.instagram-button:hover {
+    background-color: #c13584;
+}
+
+footer {
+    background-color: #333;
+    color: #ffffff;
+    text-align: center;
+    padding: 5px;
+}
